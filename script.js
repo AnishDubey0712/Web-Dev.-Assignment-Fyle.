@@ -1,4 +1,3 @@
-//Script.js With Logics
 const work = document.querySelector(".work");
 const slider = document.querySelector(".slider");
 const firstCardWidth = slider.querySelector(".card").offsetWidth;
@@ -113,7 +112,6 @@ work.addEventListener("mouseleave", autoPlay);
 
 // Form Logic 
 
-
 document.addEventListener('DOMContentLoaded', function () {
     const formGroups = document.querySelectorAll('.form-group');
 
@@ -134,8 +132,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-
-   
 
     const closeFormBtn = document.getElementById('closeFormBtn');
     const formContainer = document.getElementById('contactFormContainer');
@@ -204,14 +200,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
 function changeImage(imagePath) {
     document.getElementById('mainImage').src = imagePath;
 }
 
 function selectElement(element) {
-
     var elements = document.querySelectorAll('.about-photos');
     elements.forEach(function (el) {
         el.classList.remove('selected');
@@ -225,20 +218,21 @@ document.querySelectorAll('.about-photos').forEach(function (el) {
         selectElement(el);
     });
 });
+
 // This Array Contains All Contents After Why We Are Best We're using.
 const contentArray = [
     {
-        imagePath: 'Assets/images/Switzerland.jpg.optimal.jpg',
+        imagePath: 'assets/images/Switzerland.jpg.optimal.jpg',
         title: 'Genderless Kei - Japan\'s Hot',
         description: 'Set to launch on the manufacturer\'s new A330neo aircraft in 2017, it\'s offering lots of'
     },
     {
-        imagePath: 'Assets/images/image.png',
+        imagePath: 'assets/images/image.png',
         title: 'Better Strategy & Quality',
         description: 'Set to launch on the manufacturer\'s new A330neo aircraft in 2017, it\'s offering lots of'
     },
     {
-        imagePath: 'Assets/images/Imaage.jpg',
+        imagePath: 'assets/images/Imaage.jpg',
         title: 'Genderless Kei - Japan\'s Hot',
         description: 'Set to launch on the manufacturer\'s new A330neo aircraft in 2017, it\'s offering lots of'
     }
